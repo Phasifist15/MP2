@@ -132,13 +132,8 @@
 }
 
 .main .title{
-  @include rfs(3rem, font-size);
   font-weight: 1000;
   margin-top: 10%;
-}
-
-.title-des{
-  @include font-size (1rem);
 }
 
 .getStarted{
