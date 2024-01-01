@@ -58,10 +58,6 @@
   #bookBtn1, #bookBtn2{
     margin-top: 5px;
   }
-
-  .navbar-nav #signupBtn {
-    
-  }
 }
 
 /* LOGIN MODAL */
@@ -175,9 +171,6 @@
 
 footer .ql1 {
   gap: 1rem;
-}
-
-footer .bi {
 }
 
 @media (max-width: 425px){
