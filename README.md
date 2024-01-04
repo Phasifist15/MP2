@@ -4,4 +4,4 @@ Members:
 
   Phoenix Aangel Ignacio Reyes
   
-  Hyrum Wilfrod Macapagal Laudato
+  Hyrum Wilford Macapagal Laudato
