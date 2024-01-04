@@ -130,10 +130,15 @@
 .main .title{
   font-weight: 1000;
   margin-top: 10%;
+  animation: bounce;
+  animation-duration: 2s;
 }
 
-.getStarted{
+#getStarted{
   margin-top: 10%;
+  animation: pulse infinite;
+  animation-duration: 2s;
+  animation-delay: 3s;
 }
 
 @media (max-width: 767px){

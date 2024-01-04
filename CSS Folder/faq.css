@@ -137,6 +137,18 @@
   color: red;
 }
 
+#notFound p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: pulse infinite;
+  animation-duration: 2s;
+  animation-delay: 5s
+  color: ;
+}
+
 @media (max-width: 768px){
   .searchBar{
     width: 100%;
