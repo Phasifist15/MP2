@@ -146,10 +146,9 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: pulse infinite;
   animation-duration: 2s;
-  animation-delay: 5s
 }
 
-#searchInput {
+#searchInput, #searchInput:focus {
   background-color: white;
 }
 
