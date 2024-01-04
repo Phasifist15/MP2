@@ -117,12 +117,13 @@
 
 /* SEARCH BAR */
 
-.searchBar{
-  width: 55%;
+#faq-header {
+  animation: pulse infinite;
+  animation-duration: 2s;
 }
 
-.searchBar:hover{
-  color: blue;
+.searchBar{
+  width: 55%;
 }
 
 #clearBtn {
@@ -149,6 +150,10 @@
   color: ;
 }
 
+#searchInput {
+  background-color: white;
+}
+
 @media (max-width: 768px){
   .searchBar{
     width: 100%;
@@ -172,6 +177,10 @@
   border-color: #ced4da;
   box-shadow: none;
   color: black;
+}
+
+.accordion-body li{
+  list-style: none;
 }
 
 @media (max-width: 768px){
