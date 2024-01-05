@@ -74,7 +74,7 @@
   margin-top: 1rem;
 }
 
-.form-control:focus, .btn-close:focus {
+.form-control:focus, .btn-close:focus, .form-control::after {
   outline: none;
   box-shadow: none;
   border-color: #ced4da;
@@ -114,6 +114,7 @@
 #noAcc a {
   text-decoration: none;
 }
+
 
 
 /* MAIN HEADER */
@@ -157,16 +158,75 @@
   margin: auto 1rem;
 }
 
-/* SECTION HEADER 2 */
+/* SERVICES */
 
-.card-icon{
-  font-size: 5rem;
-  color: orange;
+.services .section-header {
+  text-align: center;
 }
 
-.card {
-  margin: 0 auto;
+.services {
+  padding: 10px 0;
 }
+
+.services .icon {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+.services .service-item {
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #eeeeee;
+  transition: 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.services .service-item:hover h3 {
+  border-color: #2EBFD3;
+}
+
+.services .service-item:hover .icon {
+  color: #2EBFD3;
+  animation: zoomIn;
+  animation-duration: 1s;
+}
+
+.services .stretched-link {
+  text-decoration: none;
+  color: #ced4da;
+}
+
+.services .service-item:hover .readmore {
+  color: #2EBFD3;
+  animation: heartBeat infinite;
+  animation-duration: 3s;
+}
+
 
 /* FOOTER */
 

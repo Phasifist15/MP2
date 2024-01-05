@@ -115,30 +115,35 @@
         </div>
         <div class="modal-body needs-validation">
 
-          <form id="sign-up-form">
+          <form id="sign-up-form" class="needs-validation" novalidate>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <input type="text" id="" class="form-control" placeholder="Name" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <input type="email" id="" class="form-control" placeholder="Email Address" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <input type="tel" id="" class="form-control" placeholder="Contact Number" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <input type="text" id="" class="form-control" placeholder="Address" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <input type="text" id="" class="form-control" placeholder="Username" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>   
             <div class="row g-3 mb-3">
@@ -146,6 +151,7 @@
                 <div class="input-group mb-1">
                   <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password1" placeholder="Password" required>
                   <button class="btn btn-outline-secondary" type="button" id="togglePassword1"><i class="bi bi-eye" id="toggleIcons"></i></button>
+                  <div class="invalid-feedback">Name is required</div>
                 </div>
               </div>
             </div>
@@ -154,6 +160,7 @@
                 <div class="input-group mb-1">
                   <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password2" placeholder="Confirm Password"  required>
                   <button class="btn btn-outline-secondary" type="button" id="togglePassword2"><i class="bi bi-eye" id="toggleIconss"></i></button>
+                  <div class="invalid-feedback">Name is required</div>
                 </div>
               </div>
             </div>
@@ -195,85 +202,86 @@
     </div>
   </section>
 
-  <!-- SECTION HEADER 2 -->
+  <!-- SERVICES -->
 
-  <section class="main3 mt-2 bg-light bg-gradient rounded-2">
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-12 px-0">
-          <h1>Services</h1>
-          <div class="row">
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-cpu card-icon mt-3"></i>
-                <h3 class="card-title">Hardware Repair</h3>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
+  <section id="services" class="services sections-bg mt-2 mb-2 bg-light rounded-2">
+    <div class="container">
+
+      <div class="section-header bg-light">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item  position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-cpu"></i>
             </div>
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-shield-check card-icon mt-3"></i>
-                <h3 class="card-title">Security Services</h3>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-arrow-repeat card-icon mt-3"></i>
-                <h4 class="card-title">Backup and Transfer</h4>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-laptop card-icon mt-3"></i>
-                <h5 class="card-title">Computer Maintenance</h5>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-pc-display card-icon mt-3"></i>
-                <h5 class="card-title">Computer Customization</h5>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm mt-2">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <i class="bi bi-headset card-icon mt-3"></i>
-                <h4 class="card-title">Remote IT Support</h4>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-                <hr />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
+            <h3>Hardware Repair</h3>
+            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3>Computer Security Services</h3>
+            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <h3>Data Backup and Transfer</h3>
+            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3>PC Maintenance and Upgrade</h3>
+            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-pc-display"></i>
+            </div>
+            <h3>Computer Customization</h3>
+            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative shadow">
+            <div class="icon">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h3>Chat Support</h3>
+            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+            <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </section>
 

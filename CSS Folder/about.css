@@ -118,3 +118,14 @@
 #noAcc a {
   text-decoration: none;
 }
+
+
+.box {
+  background-color: blue;
+  padding: 2rem;
+  margin-top: 5%;
+  width: 10%;
+  height: 20%;
+  margin: 100px auto;
+  align-items: center;
+}
