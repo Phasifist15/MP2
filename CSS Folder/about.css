@@ -120,12 +120,109 @@
 }
 
 
-.box {
-  background-color: blue;
+/* ABOUT US */
+
+.aboutUs {
+  margin: 3rem auto;
   padding: 2rem;
-  margin-top: 5%;
-  width: 10%;
-  height: 20%;
-  margin: 100px auto;
+  text-align: center;
   align-items: center;
+  width: 100%;
+  background-color: grey;
+}
+
+.aboutUs h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.aboutUs p {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+/* ABOUT US 1 */
+
+.aboutUs1 {
+  max-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.about1, .about2{
+  margin: 0 auto;
+}
+
+.about1 img {
+  width: 660px;
+  height: 30rem;
+}
+
+.about2 {
+  width: 660px;
+  height: 30rem;
+  /* background-color: #3F6CA4; */
+  text-align: center;
+}
+
+.about2 h1 {
+  margin-top: 5rem;
+  padding: 3rem;
+  font-weight: bolder;
+}
+
+.about2 p {
+  padding: 0 3rem;
+}
+
+/* ABOUT US 2 */
+
+.aboutUs2 {
+  max-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1320px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.about3 {
+  width: 660px;
+  height: 30rem;
+  /* background-color: #3F6CA4; */
+  text-align: center;
+}
+
+.about3 h1 {
+  margin-top: 5rem;
+  padding: 3rem;
+  font-weight: bolder;
+}
+
+.about3 p {
+  padding: 0 3rem;
+}
+
+.about4, .about3{
+  margin: 3rem auto;
+}
+
+.about4 img {
+  width: 660px;
+  height: 30rem;
+}
+
+/* ABOUT US 3 */
+
+.aboutUs3 {
+  text-align: center;
+}
+
+.aboutUs3 .col {
+  padding: 2rem;
 }
