@@ -176,6 +176,10 @@
   font-size: 3rem;
 }
 
+.services h3, .services p {
+  cursor: default;
+}
+
 .services .service-item {
   padding: 40px;
   background: #fff;

@@ -74,3 +74,5 @@
         // Click the Login button on the navigation bar after automatically closing the modal for signup
         loginBtn.click();
       });
+
+// FOOTER
