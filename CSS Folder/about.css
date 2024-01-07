@@ -314,8 +314,18 @@
   text-align: center;
 }
 
+.teams .team-item{
+  cursor: pointer;
+}
+
 .teams .icon .bi {
   font-size: 4rem;
+}
+
+.team-item:hover .icons {
+  animation: bounce infinite;
+  animation-duration: 2s;
+  color: #2EBFD3;
 }
 
 #teams .container{
