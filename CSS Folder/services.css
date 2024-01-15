@@ -60,37 +60,57 @@
   }
 }
 
-/* MAIN HEADER */
+/* LOGIN MODAL */
 
-.mainHeader{
-  background: url("/Images/virus.jpg");
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-size: cover;
-  height: 100vh;
-  border-radius: 5px;
+.form-control, #togglePassword, #togglePassword1, #togglePassword2   {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  border-color: rgb(231, 220, 220);
 }
 
-.main .title{
-  @include rfs(3rem, font-size);
-  font-weight: 1000;
-  margin-top: 10%;
+#password {
+  margin-top: 1rem;
 }
 
-.title-des{
-  @include font-size (1rem);
+.form-control:focus, .btn-close:focus, .form-control::after {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da;
 }
 
-.getStarted{
-  margin-top: 10%;
+.form-control:placeholder-shown {
+  opacity: .65;
 }
 
-@media (max-width: 767px){
+#togglePassword:hover, #togglePassword1:hover, #togglePassword2:hover  {
+  background-color: #ffffff;
+  color: black;
+}
 
-  .mainHeader{
-    height: 80vh;
-  }
-  .mainHeader .title{
-    margin-top: 40%;
-  }
+#toggleIcon{
+  color: black;
+}
+
+#forgot a {
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 12.5px;
+}
+
+#submit {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#noAcc {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#noAcc a {
+  text-decoration: none;
 }

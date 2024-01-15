@@ -67,7 +67,7 @@
 
   <!-- LOGIN MODAL -->
 
-  <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-0">
@@ -119,40 +119,39 @@
           <form id="sign-up-form" class="needs-validation" novalidate>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
-                <input type="text" id="" class="form-control" placeholder="Name" required>
+                <input type="text" id="fname" class="form-control" placeholder="Name" required>
                 <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
-                <input type="email" id="" class="form-control" placeholder="Email Address" required>
-                <div class="invalid-feedback">Name is required</div>
+                <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                <div class="invalid-feedback">Email is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
-                <input type="tel" id="" class="form-control" placeholder="Contact Number" required>
-                <div class="invalid-feedback">Name is required</div>
+                <input type="tel" id="contacts" class="form-control" placeholder="Contact Number" required>
+                <div class="invalid-feedback">Contact Number is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
-                <input type="text" id="" class="form-control" placeholder="Address" required>
-                <div class="invalid-feedback">Name is required</div>
+                <input type="text" id="address" class="form-control" placeholder="Address" required>
+                <div class="invalid-feedback">Address is required</div>
               </div>
             </div>
             <div class="row g-3 mb-3">
               <div class="col mb-3">
-                <input type="text" id="" class="form-control" placeholder="Username" required>
-                <div class="invalid-feedback">Name is required</div>
+                <input type="text" id="user" class="form-control" placeholder="Username" required>
+                <div class="invalid-feedback">Username is required</div>
               </div>
             </div>   
             <div class="row g-3 mb-3">
               <div class="col mb-3">
                 <div class="input-group mb-1">
                   <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password1" placeholder="Password" required>
-                  <button class="btn btn-outline-secondary" type="button" id="togglePassword1"><i class="bi bi-eye" id="toggleIcons"></i></button>
-                  <div class="invalid-feedback">Name is required</div>
+                  <div class="invalid-feedback">Password is required</div>
                 </div>
               </div>
             </div>
@@ -160,12 +159,11 @@
               <div class="col mb-1">
                 <div class="input-group mb-1">
                   <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password2" placeholder="Confirm Password"  required>
-                  <button class="btn btn-outline-secondary" type="button" id="togglePassword2"><i class="bi bi-eye" id="toggleIconss"></i></button>
-                  <div class="invalid-feedback">Name is required</div>
+                  <div class="invalid-feedback">Password is required</div>
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-info mb-3" id="submit">Sign Up</button>
+            <button type="submit" class="btn btn-info mb-3" id="submit" onclick="validation()">Sign Up</button>
             <div class="row g-3 text-center">
               <p id="already">Already have an account? <span><a href="#" id="loginAnchored" style="text-decoration: none;">Log In</a></span>.</p>
             </div>
@@ -323,5 +321,6 @@
 
   <script src="JavaScript Folder/app.js"></script>
   <script src="JavaScript Folder/sigunp-validation.js"></script>
+  <script src="JavaScript Folder/login.js"></script>
 </body>
 </html>

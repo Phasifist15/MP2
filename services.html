@@ -13,68 +13,167 @@
 
       <!-- NAVIGATION BAR -->
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary bg-gradient shadow sticky-top rounded-1">
-        <div class="container-fluid">
-          <a href="index.html" class="navbar text-decoration-none">
-            <img src="Images/logo.png" title="DRU Repair Center" width="80" height="50">
-            <span class="logo-text">DRU Repair Center</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu" aria-controls="dropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end-md" id="dropdownMenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="services.html" id="dropdownMenuServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuServices">
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-hammer"></i>Services</a></li>
-                  <li><a href="hardware.html" class="dropdown-item"><i class="bi bi-cpu"></i>Hardware Repair</a></li>
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-shield-check"></i>Computer Security Services</a></li>
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-arrow-repeat"></i>Data Backup and Transfer</a></li>
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-laptop"></i>PC Maintenance and Upgrade</a></li>
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-pc-display"></i>Computer Customization</a></li>
-                  <li><a href="services.html" class="dropdown-item"><i class="bi bi-headset"></i>Remote IT Support</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ's</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary bg-gradient shadow sticky-top rounded-1">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar text-decoration-none">
+        <img src="Images/logo.png" title="DRU Repair Center" width="80" height="50">
+        <span class="logo-text">DRU Repair Center</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu" aria-controls="dropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end-md" id="dropdownMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown menu1">
+            <a class="nav-link dropdown-toggle dropdown-toggle" href="services.html" id="dropdownMenuServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuServices">
+              <li><a href="services.html" class="dropdown-item"><i class="bi bi-hammer"></i>Services</a></li>
+              <li><a href="hardware.html" class="dropdown-item"><i class="bi bi-cpu"></i>Hardware Repair</a></li>
+              <li><a href="security.html" class="dropdown-item"><i class="bi bi-shield-check"></i>Computer Security Services</a></li>
+              <li><a href="#" class="dropdown-item"><i class="bi bi-arrow-repeat"></i>Data Backup and Transfer</a></li>
+              <li><a href="#" class="dropdown-item"><i class="bi bi-laptop"></i>PC Maintenance and Upgrade</a></li>
+              <li><a href="#" class="dropdown-item"><i class="bi bi-pc-display"></i>Computer Customization</a></li>
+              <li><a href="#" class="dropdown-item"><i class="bi bi-headset"></i>Remote IT Support</a></li>
             </ul>
-            <ul class="navbar-nav ms-auto book login">
-              <li class="nav-item text-center">
-                <button type="button" class="btn btn-primary container" id="bookBtn1">Log In</button>
-              </li>
-              <!-- <br /> -->
-              <ul class="navbar-nav ms-auto book">
-                <li class="nav-item text-center">
-                  <button type="button" class="btn btn-outline-primary container" id="bookBtn2">Sign Up</button>
-                </li>
-              </ul>
-            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ's</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto login">
+          <li class="nav-item text-center">
+            <button type="button" class="btn btn-primary container" data-bs-toggle="modal" data-bs-target="#login" id="loginBtn">Log In</button>
+          </li>
+          <br />
+          <ul class="navbar-nav ms-auto login">
+            <li class="nav-item text-center">
+              <button type="button" class="btn btn-outline-primary container" id="signupBtn" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN MODAL -->
+
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col">
+                <h5 class="modal-title text-center mb-0">Log In</h5>
+              </div>
+              <div class="col-auto">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+        <div class="modal-body">
+          <input type="text" class="form-control border-top-0 border-end-0 border-start-0 rounded-0 mb-3" id="username" placeholder="Username">
+          <div class="input-group mb-1">
+            <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password" placeholder="Password">
+            <button class="btn btn-outline-secondary" type="button" id="togglePassword"><i class="bi bi-eye" id="toggleIcon"></i></button>
+          </div>
+          <p class="" id="forgot"><a href="#" class="">Forgot Password?</a></p>
+          <button type="submit" class="btn btn-info" id="submit">Sign In</button>
 
-      <!-- MAIN HEADER -->
-
-  <div class="container-fluid main mt-1">
-    <div class="row">
-      <div class="col-sm-12 mainHeader text-white text-center py-sm-5">
-        <h1 class="title justify-content-lg-start">OUR SERVICES</h1> <br />
-        <span class="title-des py-lg-5">DRU Online Repair Center is here to bring your devices back to optimal condition, WHEREVER you are. Let’s discuss it further</span> <br />
-        <a href="#" class="btn btn-primary text-white getStarted">Learn More</a>
+          <p id="noAcc">No Account? <span><a href="#" id="signupAnchored">Sign Up</a></span>.</p>
+        </div>
       </div>
     </div>
   </div>
 
-  
+  <!-- SIGN UP MODAL -->
+
+  <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col">
+                <h5 class="modal-title mb-0 text-center">Sign Up</h5>
+              </div>
+              <div class="col-auto">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body needs-validation">
+
+          <form id="sign-up-form" class="needs-validation" novalidate>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="fname" class="form-control" placeholder="Name" required>
+                <div class="invalid-feedback">Name is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                <div class="invalid-feedback">Email is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="tel" id="contacts" class="form-control" placeholder="Contact Number" required>
+                <div class="invalid-feedback">Contact Number is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="address" class="form-control" placeholder="Address" required>
+                <div class="invalid-feedback">Address is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="user" class="form-control" placeholder="Username" required>
+                <div class="invalid-feedback">Username is required</div>
+              </div>
+            </div>   
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password1" placeholder="Password" required>
+                  <div class="invalid-feedback">Password is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mb-1">
+              <div class="col mb-1">
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password2" placeholder="Confirm Password"  required>
+                  <div class="invalid-feedback">Password is required</div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info mb-3" id="submit" onclick="validation()">Sign Up</button>
+            <div class="row g-3 text-center">
+              <p id="already">Already have an account? <span><a href="#" id="loginAnchored" style="text-decoration: none;">Log In</a></span>.</p>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="JavaScript Folder/sigunp-validation.js"></script>
+  <script src="JavaScript Folder/login.js"></script>
+  <script src="JavaScript Folder/services.js"></script>
 </body>
 </html>

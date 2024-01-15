@@ -113,52 +113,61 @@
             </div>
           </div>
         </div>
-        <div class="modal-body">
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <input type="text" id="" class="form-control" placeholder="Name" required>
-            </div>
-          </div>
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <input type="email" id="" class="form-control" placeholder="Email Address" required>
-            </div>
-          </div>
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <input type="tel" id="" class="form-control" placeholder="Contact Number" required>
-            </div>
-          </div>
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <input type="text" id="" class="form-control" placeholder="Address" required>
-            </div>
-          </div>
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <input type="text" id="" class="form-control" placeholder="Username" required>
-            </div>
-          </div>   
-          <div class="row g-3 mb-3">
-            <div class="col mb-3">
-              <div class="input-group mb-1">
-                <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password1" placeholder="Password">
-                <button class="btn btn-outline-secondary" type="button" id="togglePassword1"><i class="bi bi-eye" id="toggleIcons"></i></button>
+        <div class="modal-body needs-validation">
+
+          <form id="sign-up-form" class="needs-validation" novalidate>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="fname" class="form-control" placeholder="Name" required>
+                <div class="invalid-feedback">Name is required</div>
               </div>
             </div>
-          </div>
-          <div class="row g-3 mb-1">
-            <div class="col mb-1">
-              <div class="input-group mb-1">
-                <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password2" placeholder="Confirm Password">
-                <button class="btn btn-outline-secondary" type="button" id="togglePassword2"><i class="bi bi-eye" id="toggleIconss"></i></button>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                <div class="invalid-feedback">Email is required</div>
               </div>
             </div>
-          </div>
-          <button type="submit" class="btn btn-info mb-3" id="submit">Sign Up</button>
-          <div class="row g-3 text-center">
-            <p id="already">Already have an account? <span><a href="#" id="loginAnchored" style="text-decoration: none;">Log In</a></span>.</p>
-          </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="tel" id="contacts" class="form-control" placeholder="Contact Number" required>
+                <div class="invalid-feedback">Contact Number is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="address" class="form-control" placeholder="Address" required>
+                <div class="invalid-feedback">Address is required</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <input type="text" id="user" class="form-control" placeholder="Username" required>
+                <div class="invalid-feedback">Username is required</div>
+              </div>
+            </div>   
+            <div class="row g-3 mb-3">
+              <div class="col mb-3">
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password1" placeholder="Password" required>
+                  <div class="invalid-feedback">Password is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mb-1">
+              <div class="col mb-1">
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="password2" placeholder="Confirm Password"  required>
+                  <div class="invalid-feedback">Password is required</div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info mb-3" id="submit" onclick="validation()">Sign Up</button>
+            <div class="row g-3 text-center">
+              <p id="already">Already have an account? <span><a href="#" id="loginAnchored" style="text-decoration: none;">Log In</a></span>.</p>
+            </div>
+          </form>
+
       </div>
     </div>
   </div>
@@ -263,5 +272,7 @@
 
   <script src="JavaScript Folder/faq.js"></script>
   <script src="JavaScript Folder/faq-search.js"></script>
+  <script src="JavaScript Folder/sigunp-validation.js"></script>
+  <script src="JavaScript Folder/login.js"></script>
 </body>
 </html>
