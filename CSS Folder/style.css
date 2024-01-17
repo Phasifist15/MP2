@@ -120,12 +120,9 @@
 /* MAIN HEADER */
 
 .mainHeader{
-  background: url("/Images/vi.jpg");
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-size: cover;
   height: 100vh;
   border-radius: 5px;
+  background-color: #ABD1E2;
 }
 
 .main .title{
@@ -228,7 +225,7 @@
 .services .service-item:hover .readmore {
   color: #2EBFD3;
   animation: heartBeat infinite;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .services .s1, .s2, .s3, .s4, .s5, .s6 {
@@ -238,12 +235,21 @@
 
 /* FOOTER */
 
+.foot {
+  background-color: #07232C;
+}
+
+.foot .quick {
+  text-align: justify;
+  padding: 0 3rem;
+}
+
 .titleFooter .btn {
   text-align: center;
 }
 
-footer .ql1 {
-  gap: 1rem;
+.quick .ql1:hover {
+  color: #2EBFD3;
 }
 
 @media (max-width: 425px){

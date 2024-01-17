@@ -71,3 +71,8 @@
         }
       });
     });
+
+// FOOTER LEARN MORE
+function learn(){
+  window.location.href = 'about.html';
+}
