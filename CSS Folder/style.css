@@ -120,15 +120,16 @@
 /* MAIN HEADER */
 
 .mainHeader{
-  height: 100vh;
+  max-height: 100vh;
   border-radius: 5px;
-  background-color: #ABD1E2;
 }
 
 .main .title{
   font-weight: 1000;
-  margin-top: 10%;
-  animation: bounce;
+}
+
+.mainImg {
+  animation: shakeY infinite;
   animation-duration: 2s;
 }
 
@@ -151,8 +152,12 @@
 
 /* SECTION HEADER */
 
-.main2-text{
-  margin: auto 1rem;
+.main2 {
+  background-color: #07232C;
+}
+
+.main2des {
+  padding: 3rem 2rem;
 }
 
 /* SERVICES */
