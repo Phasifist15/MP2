@@ -115,10 +115,30 @@
   text-decoration: none;
 }
 
-/* MAIN SECTION */
+/* MAIN HEADER */
 
-.mainImg img{
-  margin-right: 0;
+.main .mainDes {
+  margin: 2.5rem auto;
+}
+
+.mainImg img {
+  height: 500px;
+}
+
+@media (max-width: 768px){
+  .main .row1{
+    flex-wrap: wrap-reverse;
+  }
+
+  .main .mainHeader {
+    margin-top: -4.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainImg img {
+    height: 200px;
+  }
 }
 
 /* FOOTER */

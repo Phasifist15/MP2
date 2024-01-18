@@ -65,7 +65,7 @@
         
         if (rect.top <= windowHeight && rect.bottom >= 0) {
           service.style.animation = "zoomIn 2s";
-          service.style.animationDelay = "0.2s";
+          service.style.animationDelay = "0.1s";
         } else {
           service.style.animation = "none";
         }

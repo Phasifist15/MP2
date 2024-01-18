@@ -140,13 +140,22 @@
   animation-delay: 3s;
 }
 
-@media (max-width: 767px){
 
-  .mainHeader{
-    height: 80vh;
+
+@media (max-width: 768px){
+
+  .main .mainImg {
+    margin: 0 auto;
   }
-  .mainHeader .title{
-    margin-top: 40%;
+
+  .main img{
+    height: 10%;
+    width: 100%;
+  }
+
+  .mainHeader {
+    margin-top: 1rem;
+    padding: 0;
   }
 }
 
@@ -158,6 +167,20 @@
 
 .main2des {
   padding: 3rem 2rem;
+}
+
+@media (min-width: 768px) {
+
+  .main2 {
+    margin-top: 2rem;
+  }
+  .main2des {
+    padding: 8px;
+  }
+
+  .main2-img {
+    margin: auto auto;
+  }
 }
 
 /* SERVICES */
