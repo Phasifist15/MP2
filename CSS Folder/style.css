@@ -253,8 +253,14 @@
   text-align: center;
 }
 
+.quick i {
+  margin-right: 1rem;
+}
+
 .quick .ql1:hover {
   color: #2EBFD3;
+  cursor: pointer;
+  transform: scaleX(0.9);
 }
 
 @media (max-width: 425px){
