@@ -72,6 +72,14 @@
       });
     });
 
+// MAIN SECTION ANIMATION
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainHeader = document.querySelector('.mainHeader');
+
+  mainHeader.style.animation = "fadeIn 2s";
+});
+
 // FOOTER LEARN MORE
 function learn(){
   window.location.href = 'about.html';

@@ -46,3 +46,13 @@
 
         loginBtn.click();
       });
+
+// MAIN SECTION ANIMATION
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainHeader = document.querySelector('.mainHeader');
+  const mainImg = document.querySelector('.mainImg');
+
+  mainHeader.style.animation = "fadeInLeft 2s";
+  mainImg.style.animation = "fadeInRight 2s";
+});
