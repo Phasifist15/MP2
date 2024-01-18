@@ -260,7 +260,8 @@
 .quick .ql1:hover {
   color: #2EBFD3;
   cursor: pointer;
-  transform: scaleX(0.9);
+  /* transform: scaleX(0.95); */
+  margin-left: 1rem;
 }
 
 @media (max-width: 425px){
