@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
-  var loginModal = new bootstrap.Modal(document.getElementById('login'));
+  const signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
+  const loginModal = new bootstrap.Modal(document.getElementById('login'));
 
-  var form = document.getElementById('sign-up-form');
-  var confirmPasswordInput = document.getElementById('password2');
+  const form = document.getElementById('sign-up-form');
+  const confirmPasswordInput = document.getElementById('password2');
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!form.checkValidity()) {
       form.classList.add('was-validated');
     } else {
-      var password = document.getElementById('password1').value;
-      var confirmPass = confirmPasswordInput.value;
+      const password = document.getElementById('password1').value;
+      const confirmPass = confirmPasswordInput.value;
 
       if (password !== confirmPass) {
         confirmPasswordInput.setCustomValidity("Passwords don't match");
@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
         confirmPasswordInput.setCustomValidity('');
         confirmPasswordInput.reportValidity();
 
-        var fullName = document.getElementById("fname").value;
-        var email = document.getElementById("email").value;
-        var contact = document.getElementById("contacts").value;
-        var address = document.getElementById("address").value;
-        var username = document.getElementById("user").value;
-        var password = document.getElementById("password1").value;
+        const fullName = document.getElementById("fname").value;
+        const email = document.getElementById("email").value;
+        const contact = document.getElementById("contacts").value;
+        const address = document.getElementById("address").value;
+        const username = document.getElementById("user").value;
+        const password = document.getElementById("password1").value;
   
-        var users = JSON.parse(localStorage.getItem('users')) || [];
-        users.push({ fullName: fullName, email: email, contact: contact, address: address, username: username, password: password });
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push({ fullName, email, contact, address, username, password });
         localStorage.setItem('users', JSON.stringify(users));
 
         form.reset();
@@ -40,24 +40,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Real-time validation of password and confirm password
+  // Validate the Password and Confirm Password
+
   confirmPasswordInput.addEventListener('input', function () {
-    var password = document.getElementById('password1').value;
-    var confirmPass = confirmPasswordInput.value;
-
-    if (password !== confirmPass) {
-      confirmPasswordInput.setCustomValidity("Passwords don't match");
-    } else {
-      confirmPasswordInput.setCustomValidity('');
-    }
-
-    confirmPasswordInput.reportValidity();
-  });
-
-  signupModal.addEventListener('hidden.bs.modal', function () {
-    form.classList.remove('was-validated');
-    form.reset();
-  });
-
+    const password = document.getElementById('password1').value;
+    const confirmPass = confirmPasswordInput.value;
   
+    if (password !== confirmPass) {
+      confirmPasswordInput.classList.add('is-invalid');
+      confirmPasswordInput.classList.remove('is-valid');
+      confirmPasswordInput.nextElementSibling.textContent = "Passwords don't match";
+    } else {
+      confirmPasswordInput.classList.remove('is-invalid');
+      confirmPasswordInput.classList.add('is-valid');
+      confirmPasswordInput.nextElementSibling.textContent = "";
+    }
+  });
 });
