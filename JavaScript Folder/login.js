@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (user) {
-      window.location.href = 'about.html';
+      window.location.href = 'dashboard.html';
     } else {
       alert('Invalid username or password');
     }
