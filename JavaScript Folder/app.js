@@ -78,9 +78,35 @@
 
 //Animation on Scroll
     const services = document.querySelectorAll('.serv');
+    const secondHeaderDes = document.querySelectorAll('.main2-text');
+    const secondHeaderImg = document.querySelectorAll('.main2-img');
 
     document.addEventListener('scroll', () => {
       services.forEach(service => {
+        const rect = service.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          service.style.animation = "zoomIn 2s";
+          service.style.animationDelay = "0.1s";
+        } else {
+          service.style.animation = "none";
+        }
+      });
+
+      secondHeaderDes.forEach(service => {
+        const rect = service.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          service.style.animation = "fadeIn 2s";
+          service.style.animationDelay = "0.1s";
+        } else {
+          service.style.animation = "none";
+        }
+      });
+
+      secondHeaderImg.forEach(service => {
         const rect = service.getBoundingClientRect();
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         

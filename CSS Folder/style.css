@@ -169,6 +169,10 @@
   padding: 3rem 2rem;
 }
 
+.main2 .main2-img {
+  margin: 1rem;
+}
+
 @media (min-width: 768px) {
 
   .main2 {
