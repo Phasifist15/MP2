@@ -99,7 +99,7 @@
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         
         if (rect.top <= windowHeight && rect.bottom >= 0) {
-          service.style.animation = "fadeIn 2s";
+          service.style.animation = "fadeInLeft 2s";
           service.style.animationDelay = "0.1s";
         } else {
           service.style.animation = "none";
@@ -111,8 +111,8 @@
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         
         if (rect.top <= windowHeight && rect.bottom >= 0) {
-          service.style.animation = "zoomIn 2s";
-          service.style.animationDelay = "0.1s";
+          service.style.animation = "fadeInRight 2s";
+          service.style.animationDelay = "0.3s";
         } else {
           service.style.animation = "none";
         }

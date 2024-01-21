@@ -128,18 +128,24 @@
   text-align: center;
   align-items: center;
   width: 100%;
-  background-color: grey;
+  background-color: #07232C;
 }
 
 .aboutUs h1 {
   font-size: 5rem;
   font-weight: bold;
   margin: 2rem;
+  background: -webkit-linear-gradient(#c193c5, #7bc6cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .aboutUs p {
   margin: 2rem;
   font-size: 1.5rem;
+  background: -webkit-linear-gradient(#c193c5, #7bc6cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* MISSION  AND WHO WE ARE*/
@@ -222,10 +228,14 @@
 
 .aboutUs3 .col {
   padding: 2rem;
+  background-image: linear-gradient(to right, #000428, #004e92);
 }
 
-.aboutUs3 h1 {
+.aboutUs3 h1, .aboutUs3 p{
   font-weight: bolder;
+  background: -webkit-linear-gradient(#c193c5, #7bc6cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 425px){
@@ -246,7 +256,7 @@
 }
 
 .meet {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .teams .section-header {
@@ -297,6 +307,16 @@
   margin: 0;
   padding: 0;
   font-weight: 100;
+}
+
+/* OUR VALUES */
+
+.values-header {
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#c193c5, #7bc6cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #000428, #004e92);
 }
 
 /* MEDIA QUERIES */
