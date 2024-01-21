@@ -50,6 +50,11 @@
   font-weight: 1000;
 }
 
+.dropdown-menu .active {
+  background-color: white;
+  color: #2EBFD3;
+}
+
 @media (max-width: 768px){
   .login{
     display: block;
