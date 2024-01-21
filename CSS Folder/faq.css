@@ -213,6 +213,25 @@
   margin-left: 1rem;
 }
 
+.socials {
+  margin-bottom: 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials i {
+  margin: 1rem;
+  font-size: 18px;
+}
+
+.socials a:hover {
+  color: #2EBFD3;
+  transform: scale(2);
+}
+
 @media (max-width: 425px){
   footer .title2 {
     margin: 1rem;
