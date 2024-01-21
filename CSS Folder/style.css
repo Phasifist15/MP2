@@ -140,8 +140,6 @@
   animation-delay: 3s;
 }
 
-
-
 @media (max-width: 768px){
 
   .main .mainImg {
@@ -156,6 +154,13 @@
   .mainHeader {
     margin-top: 1rem;
     padding: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .main2-img {
+    width: 350px;
+    text-align: center;
   }
 }
 

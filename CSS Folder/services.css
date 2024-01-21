@@ -121,17 +121,24 @@
 }
 
 /* MAIN HEADER */
-
 .main .mainDes {
   margin: 2.5rem auto;
 }
 
-.mainImg img {
-  height: 500px;
+.mainImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Set the initial height */
 }
 
-@media (max-width: 768px){
-  .main .row1{
+.mainImg img {
+  max-height: 100%;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .main .row1 {
     flex-wrap: wrap-reverse;
   }
 
@@ -141,10 +148,11 @@
 }
 
 @media (max-width: 425px) {
-  .mainImg img {
-    height: 200px;
+  .mainImg {
+    height: 300px; /* Adjust the height for smaller screens */
   }
 }
+
 
 /* FOOTER */
 
