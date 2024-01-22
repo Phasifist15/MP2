@@ -99,3 +99,8 @@ document.addEventListener('scroll', () => {
   applyAnimationOnce(desLeft, 'fadeInLeft');
   applyAnimationOnce(desRight, 'fadeInRight');
 });
+
+// FOOTER LEARN MORE
+function learn(){
+  window.location.href = 'about.html';
+}

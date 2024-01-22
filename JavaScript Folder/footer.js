@@ -9,3 +9,8 @@ function services() {
 function faq() {
   window.location.href = 'faq.html';
 }
+
+// FOOTER LEARN MORE
+function learn(){
+  window.location.href = 'about.html';
+}
