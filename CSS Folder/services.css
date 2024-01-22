@@ -121,6 +121,7 @@
 }
 
 /* MAIN HEADER */
+
 .main .mainDes {
   margin: 2.5rem auto;
 }
@@ -129,7 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px; /* Set the initial height */
+  height: 500px;
 }
 
 .mainImg img {
@@ -149,7 +150,7 @@
 
 @media (max-width: 425px) {
   .mainImg {
-    height: 300px; /* Adjust the height for smaller screens */
+    height: 300px;
   }
 }
 
